@@ -26,4 +26,6 @@ func main() {
 
 	char := "bkko"
 	fmt.Println(practice.RemoveChar(char))
+
+	practice.ToRecover()
 }
