@@ -1,11 +1,11 @@
-package method
+package main
 
 import (
 	"fmt"
 	"strconv"
 )
 
-func ModifiedPointer(digit *int, text *string) {
+func modifiedPointer(digit *int, text *string) {
 	fmt.Println("Yeah Pointers it is 👉🏡...........")
 
 	if digit == nil && text == nil {
@@ -16,4 +16,10 @@ func ModifiedPointer(digit *int, text *string) {
 	*digit += *digit
 	*text += strconv.Itoa(*digit)
 	fmt.Printf("The value of the modified digit is %v \n	The value of the modified text is  '%v' \n ", *digit, *text)
+}
+
+func main() {
+	num := 34
+	text := "let me in"
+	modifiedPointer(&num, &text)
 }

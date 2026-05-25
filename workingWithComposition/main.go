@@ -1,4 +1,4 @@
-package method
+package main
 
 import "fmt"
 
@@ -17,19 +17,6 @@ func (f address) PrintDetails() {
 	fmt.Println(f.town)
 }
 
-var callFellow = address{
-	country: "Nigeria",
-	state:   "Lagos",
-	LGA:     "Ikorodu",
-	town:    "Adamo",
-}
-
-var callCompany = address{
-	country: "England",
-	state:   "Yorkshire",
-	LGA:     "Wendy",
-	town:    "Loomside",
-}
 type employee struct {
 	name       string
 	department string
@@ -41,7 +28,7 @@ type employee struct {
 
 func main() {
 	// composition
-	var empDetails = employee{
+	empDetails := employee{
 		name:       "Micheal Samuel",
 		department: "Engineering",
 		age:        14,
@@ -58,4 +45,6 @@ func main() {
 			town: "Montgometry",
 		},
 	}
+	empDetails.cAddress.PrintDetails()
+	empDetails.fAddress.PrintDetails()
 }
