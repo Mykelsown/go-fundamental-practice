@@ -38,21 +38,24 @@ type employee struct {
 	cAddress   address
 }
 
-// composition
-var empDetails = employee{
-	name:       "Micheal Samuel",
-	department: "Engineering",
-	age:        14,
-	fAddress:  address{
-		country: "Nigeria",
-		state: "Osun",
-		LGA: "Bolorun duro",
-		town: "block 1",
-	} ,
-	cAddress: address{
-		country: "Nigeria",
-		state: "Lagos",
-		LGA: "Yaba",
-		town: "Montgometry",
-	},
+
+func main() {
+	// composition
+	var empDetails = employee{
+		name:       "Micheal Samuel",
+		department: "Engineering",
+		age:        14,
+		fAddress:  address{
+			country: "Nigeria",
+			state: "Osun",
+			LGA: "Bolorun duro",
+			town: "block 1",
+		} ,
+		cAddress: address{
+			country: "Nigeria",
+			state: "Lagos",
+			LGA: "Yaba",
+			town: "Montgometry",
+		},
+	}
 }
