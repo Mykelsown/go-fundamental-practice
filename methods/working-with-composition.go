@@ -34,8 +34,8 @@ type employee struct {
 	name       string
 	department string
 	age        int
-	faddress   address
-	district   address
+	fAddress   address
+	cAddress   address
 }
 
 // composition
